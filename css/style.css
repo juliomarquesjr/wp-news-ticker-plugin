@@ -1,0 +1,44 @@
+/* Estilos para o ticker de noticias */
+#wnt-news-ticker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#wnt-news-ticker .wnt-ticker-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#wnt-news-ticker .wnt-ticker-item {
+    margin: 0 2px;
+}
+
+#wnt-news-ticker .wnt-ticker-item a {
+    color: #f9f9f9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#wnt-news-ticker .wnt-ticker-item a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustar o layout para dispositivos moveis */
+@media (max-width: 768px) {
+    #wnt-news-ticker {
+        font-size: 14px;
+    }
+
+    #wnt-news-ticker .wnt-ticker-container {
+        flex-direction: column;
+    }
+}
