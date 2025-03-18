@@ -3,7 +3,7 @@
 /**
  * Plugin Name: WP News Ticker
  * Description: Plugin para exibição de notícias em um efeito de transição no front-end.
- * Version: 1.1.3
+ * Version: 1.1.4
  * Author: Julio Marques - Maxim Web
  */
 
@@ -136,8 +136,8 @@ function wnt_news_list_page()
         </table>
         <p>Desenvolvido por:
             <a href="https://www.linkedin.com/in/juliomarquesjr/" target="_blank">
-                <strong>Julio Marques</strong>
-            </a> (Maxim Web)
+                <strong>Maxim Web.</strong>
+            </a>
         </p>
     </div>
 <?php
@@ -167,11 +167,7 @@ function wnt_display_news_ticker()
                 <span class="wnt-ticker-item"><strong>Últimas notícias: </strong></span>
                 <?php foreach ($news_list as $news) : ?>
                     <span class="wnt-ticker-item">
-                        <?php if (empty($news->url)) : ?>
-                            <?php echo esc_html($news->title); ?>
-                        <?php else : ?>
-                            <a href="<?php echo esc_url($news->url); ?>" target="_blank"><?php echo esc_html($news->title); ?></a>
-                        <?php endif; ?>
+                        <a href="<?php echo esc_url($news->url); ?>" target="_blank"><?php echo esc_html($news->title); ?></a>
                     </span>
                 <?php endforeach; ?>
             </marquee>
