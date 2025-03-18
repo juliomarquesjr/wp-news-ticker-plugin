@@ -1,6 +1,6 @@
 /* Estilos para o ticker de noticias */
 #wnt-news-ticker {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   font-size: 18px;
