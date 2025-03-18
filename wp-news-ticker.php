@@ -3,7 +3,7 @@
 /**
  * Plugin Name: WP News Ticker
  * Description: Plugin para exibição de notícias em um efeito de transição no front-end.
- * Version: 1.1.5
+ * Version: 1.1.6
  * Author: Julio Marques - Maxim Web
  */
 
